@@ -1,10 +1,18 @@
 """Setup file for ipapconsole."""
 
+import os
 from setuptools import setup, find_packages
 
 
 def get_entry_points():
     return {"console_scripts": ["ipapconsole = ipapconsole:run"]}
+
+
+def safe_read(file_name):
+    try:
+        return open(os.path.join(os.path.dirname(__file__), file_name)).read()
+    except IOError:
+        return ""
 
 CLASSIFIERS = """\
 Framework :: IPython
@@ -25,8 +33,8 @@ classifiers = CLASSIFIERS
 author = 'Guifre Cuni, Antonio Milan Otero'
 author_email = 'gcuni@cells.es, antonio.milan_otero@maxiv.lu.se'
 description = 'An interactive Icepap console'
-long_description = open('README.md').read()
-# url = 'http://maxiv.lu.se'
+long_description = safe_read('README.md')
+# url = 'http://www.maxiv.lu.se'
 
 
 setup(
