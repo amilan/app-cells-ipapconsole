@@ -2,7 +2,10 @@
 Ipapconsole
 -----------
 
-Ipapconsole is an interactive Icepap client build on top of IPython.
+Ipapconsole is an interactive Icepap client built on top of IPython.
+
+Based on the previous IPython profile developed at Alba, it has been updated in
+order to make it work with the recent versions of IPython ( > 3 )
 
 
 How to use it
@@ -19,8 +22,8 @@ or use directly the ipython profile:
 ipython --profile=ipapconsole
 ```
 
-Notes extracted from code
--------------------------
+Notes extracted from the old code
+---------------------------------
 ```
 # ALL THIS INFO IS IN RT 13748
 # https://rt.cells.es/Ticket/Display.html?id=13748
