@@ -15,7 +15,7 @@ Topic :: System :: Shells
 """.splitlines()
 
 name = 'ipapconsole'
-version = '0.0.1'
+version = '0.0.1b1'
 packages = find_packages()
 entry_points = get_entry_points()
 # TODO: ensure dependencies
