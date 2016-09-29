@@ -1,4 +1,4 @@
-"""Setup file for ipapconsole"""
+"""Setup file for ipapconsole."""
 
 from setuptools import setup, find_packages
 
